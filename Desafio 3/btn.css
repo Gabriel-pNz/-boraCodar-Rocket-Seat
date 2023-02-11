@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1C162C;
+    gap: 15px;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'roboto';
+    color: white;
+    margin-top: 8px;
+    opacity: 0.67;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    display: grid;
+    gap: 32px;
+}
+
+.main {
+    max-width: 360px;
+    padding-inline: 40px;
+}
+
+.primary {
+    --bg-default: #8257E5;
+    --bg-hover:#9674E6;
+}
+
+.secundary {
+    --bg-default:#3C3748;
+    --bg-hover:#6A617F;
+}
+
+.tertiary {
+    --bg-default: transparent;
+    --bg-hover: transparent;
+}
+
+button {
+    display: flex;
+    background-color: var(--bg-default);
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    color: white;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/*hover é qnd o cursor passar por cima de um elemento*/
+
+button:hover {
+    background-color: var(--bg-hover);
+}
+
+/*focus é qnd se seleciona o elemento, por ex com TAB.
+Outline é parecido com border*/
+
+button:focus {
+    outline: 2px solid #D9CDF7;
+}
+
+button:disabled {
+    opacity: 0.56;
+    cursor: not-allowed;
+    background-color: var(--bg-default);
+}
+
+.loading {
+    cursor: progress;
+}
+.loading i {
+    font-size: 16px;
+    animation: spin 800ms infinite linear;
+}
+
+.movable {
+    cursor: move;
+}
+
+.movable i {
+    font-size: 16px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+

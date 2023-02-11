@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="designCalculadora.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <script src="calc.js"></script>
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="app">
+        
+        <div class="operations">
+            <div  id="calc"></div>
+            <div id="resultado">
+                <img src="assets/equals.svg" alt="">
+                <span id="final"></span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button id="ce" onclick="clean ()">CE</button>
+            <button class="num" onclick="backSpace ()" >C</button>
+            <button class="num" onclick="percent ()" onclick="insert('%') ">%</button>
+            <button id="operator" onclick="insert ('/')"><i class="ph-divide"></i></button>
+            <button onclick="insert ('7')" >7</button>
+            <button onclick="insert ('8')" >8</button>
+            <button onclick="insert ('9')" >9</button>
+            <button id="operator" onclick="insert ('*')">x</button>
+            <button onclick="insert ('4')">4</button>
+            <button onclick="insert ('5')">5</button>
+            <button onclick="insert ('6')">6</button>
+            <button id="operator" onclick="insert ('-')">-</button>
+            <button onclick="insert ('1')">1</button>
+            <button onclick="insert ('2')">2</button>
+            <button onclick="insert ('3')">3</button>
+            <button id="operator" onclick="insert ('+')">+</button>
+            <button ><i class="ph-plus-minus"></i></button>
+            <button onclick="insert ('0')">0</button>
+            <button onclick="insert ('.')">,</button>
+            <button id="operator" id="equal-btn" onclick="equals ('=')">=</button>
+        </div>
+    </div>
+</body>
+</html>

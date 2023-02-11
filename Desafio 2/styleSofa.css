@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D9CDF7;
+    
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 63px;
+}
+
+h1 {
+    font-family: 'Crimson Pro', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+#sofagif,
+#btn-close {
+    display: none;
+}
+
+.conteinerSofa {
+    position: relative;
+}
+
+.conteinerSofa > img {
+    width: 449px;
+    height: 222.96px;
+    object-fit: cover;
+}
+
+.conteinerSofa button {
+    position: absolute; /*Nesse caso
+    o position absoolute fica em relação a pag
+    inteira e não em relação a div somente.
+    Para resolver isso, damos um position relative na div .conteinerSofa, para o position absolute do button ser em relação a div*/
+    right: 0;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+html.animated button#btn-360,
+html.animated img#static {
+    display: none;
+}
+
+html.animated button#btn-close,
+html.animated img#sofagif {
+    display: initial;
+}
+
+.cod {
+    font-size: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 281px;
+}
+
+.button {
+    cursor: pointer;
+    margin-top: 8px;
+    border: 0.5px solid #271A45;
+    padding: 8px 16px;
+    border-radius: 999px;
+    width: 148px;
+    height: 32px;
+}
+
+.button p {
+    white-space: nowrap;
+}
+
+.txtButton {
+    font-size: 12px;
+}
+

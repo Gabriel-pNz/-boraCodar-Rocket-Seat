@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(22, 5, 175, 0.521);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    color: #EBEBEB;
+}
+
+#app {
+    background: #2D2A37;
+    border-radius: 1.99em;
+}
+
+.operations {
+    text-align: right;
+    padding: .5em;
+}
+
+#calc {
+    padding: 0 .9em;
+    margin-top: 1em;
+    max-height: 1em;
+    max-width: 288px;
+    min-height: 1em;
+    font-size: 1em;
+    opacity: 0.7;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+#resultado {
+    display: flex;
+    max-width: 288px;
+    margin-top: .3em;
+    min-height: 1.5em;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-size: 2em;
+    padding: 0 .5em;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding: 0em 1em 1em;
+    display: grid;
+    gap: .3em;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background: #2D2A37;
+    font-size: 1em;
+    width: 64px;
+    height: 64px;
+    border-radius: 999em;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+    color: #EBEBEB;
+    outline: none;
+}
+
+button:hover {
+    background-color: #bababa23;
+    border: 0.1rem solid #999;
+}
+
+#operator {
+    background-color: hsla(263, 50%, 31%, 1);
+}
+
+#ce {
+    color: hsla(262, 94%, 67%, 1);
+}
+
+
+img {
+    color: #fff;
+}
+
+#equal-btn {
+    display: grid;
+    align-items: center;
+}
+
+
+

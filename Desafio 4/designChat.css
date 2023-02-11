@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary {
+    --bg-default: #1A1924;
+}
+
+body {
+    background-color: var(--bg-default);
+    font-family:'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden; /*Elimina os scrolls da pag*/
+}
+
+
+p {
+    font-size: 12px;
+    color: #E1E1E6;
+}
+
+.app {
+    background-color: var(--bg-default);
+    padding: 1.5rem 72px;
+    margin-inline: auto;
+    margin-top: 0.5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.stts {
+    display: flex;
+    gap: 1rem;
+}
+
+.infoUser {
+    align-self: center;
+}
+.nameUser p {
+    font-size: 16px;
+}
+
+.sttsUser {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3px;
+    color: #00B37E;
+}
+
+.sttsUser p {
+    color: #00B37E;
+}
+
+svg, .close {
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+    color: #E1E1E6;
+}
+
+.messages {
+    overflow-y: scroll;
+    height: 450px;
+    margin-bottom:1rem;
+}
+
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+.conversa {
+    margin-top: 2rem;
+    max-width: 50vw;
+}
+
+.msg {
+    display: inline-block;
+    background: #633BBC;
+    border-radius: 8px 8px 0px 8px;
+    padding: 0.7rem;
+    margin-top: 0.8rem;
+    
+}
+
+.you {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.you p  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.youText {
+    max-width: 40vw;
+}
+
+.msgYou {
+   
+    background: #07847E;
+    border-radius: 8px 8px 0px 8px;
+    padding: 0.7rem;
+    margin-top: 0.8rem; 
+
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    justify-content: space-between;
+    border-radius: 999px;
+    background: #282843;
+    
+}
+
+.send input, button {
+    background-color: transparent;
+    border: 0;
+    font-size: 12px;
+    color: #E1E1E6;
+}
+
+.send input {
+    outline: none;
+    width: 100%;
+}
+
+.send:focus-within {
+    outline: 2px solid #fff;
+}
+
+@media screen and (max-width: 725px) {
+
+    .app {
+        width: 95%;
+        
+    }
+
+    .conversa {
+        max-width: 230px;
+    }
+
+   .you {
+        max-width: 230px;
+        margin-left: auto;
+   }
+
+   .messages {
+    margin-bottom: 4px;
+   }
+
+   .messages {
+    margin-bottom:1rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
