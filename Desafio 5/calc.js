@@ -26,5 +26,5 @@ function percent () {
     var porce = document.querySelector('#calc').innerHTML
     document.querySelector('#calc').innerText = porce / 100;
 }
- 
+
 

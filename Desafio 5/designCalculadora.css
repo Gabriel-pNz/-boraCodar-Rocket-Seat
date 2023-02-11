@@ -31,7 +31,7 @@ body {
     max-height: 1em;
     max-width: 288px;
     min-height: 1em;
-    font-size: 1em;
+    font-size: 1.5em;
     opacity: 0.7;
     overflow-wrap: break-word;
     word-break: break-all;
@@ -58,8 +58,11 @@ body {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #2D2A37;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 64px;
     height: 64px;
     border-radius: 999em;
