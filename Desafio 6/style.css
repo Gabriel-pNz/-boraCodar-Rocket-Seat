@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    color: #FFFFFF;
+    letter-spacing: -0.02rem;
+}
+
+#card1 {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 22px 32px;
+    background-color: #fff;
+    border-bottom: 1px dashed gray;
+}
+
+.infoValue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoValue p {
+    font-size: 14px;
+    opacity: 0.64;
+    letter-spacing: -0.02rem;
+}
+
+.infoValue h3 {
+    color: black;
+}
+
+.infoDate {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 1rem;
+}
+
+.infoDate p {
+    font-size: 14px;
+    opacity: 0.64;
+    letter-spacing: -0.02rem;
+}
+
+.infoDate span {
+    letter-spacing: -0.02em;
+    font-size: 16px;
+    line-height: 19px;
+    color:rgb(0, 0, 0, 0.8);
+}
+
+.right {
+    text-align: end;
+}
+
+.left {
+    text-align: start;
+}
+
+.infoDate h2 {
+    font-size: 3rem;
+}
+
+#card2 {
+    
+    background: #FFFFFF;
+    padding: 22px 32px;
+    border-radius: 2rem;
+    border-bottom: 1px dashed gray;
+}
+
+#card2 h3 {
+    color: black;
+}
+
+#card2 p {
+    
+    font-size: 14px;
+    opacity: 0.64;
+    letter-spacing: -0.02rem;
+}
+
+#card3 {
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 22px 32px;
+    background-color: #fff;
+    gap: 1rem;
+    border-bottom: 1px dashed gray;
+}
+
+#card3, .left {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    background-color: rgba(99, 59, 188, 1);
+    display: inline-block;
+    padding: 4px 8px;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    border-radius: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0.5rem;
+    max-width: 339.53px;
+    color: #FFFFFF;
+    opacity: 0.64;
+    font-size: 14px;
+}
+
+
+
+
+
