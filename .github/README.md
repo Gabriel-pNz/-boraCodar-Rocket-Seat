@@ -35,7 +35,7 @@ Participe também! É só entrar no site do <a href="https://boracodar.dev">**#b
   <tr>
     <td>5. <a href="https://github.com/Gabriel-pNz/-boraCodar-Rocket-Seat/tree/master/Desafio%205">Calculadora</a></td>
     <td>6. <a href="https://github.com/Gabriel-pNz/-boraCodar-Rocket-Seat/tree/master/Desafio%206">Cartão de embarque</a></td>
-    <td></td>
+    
   </tr>
   <tr>
     <td>7. <a href="">Site de busca de carnaval</a></td>
